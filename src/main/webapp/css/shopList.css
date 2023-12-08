@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+figure.container {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 2.7% 10px 2%;
+    padding: 0 0 0 0;
+    max-width: 45%;
+    max-height: 100%;
+    width: 100%;
+    text-align: left;
+    background-color: #895d35;
+    font-size: 16px;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+figure.container * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+figure.container img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+
+figure.container h3,
+figure.container p {
+    line-height: 1.5em;
+    text-align: center;
+}
+
+figure.container h3{
+    margin: 0;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+figure.container p{
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 70px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #895d35;
+}
+
+
+
+.mc-sl__item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+.mc-sl__item span:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+.mc-sl__name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333333;
+    margin-left: 10px;
+}
+
+/* Style for the address */
+.mc-sl__address {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* Style for the address icon */
+.mc-sl__icon path {
+    fill: #333;
+    stroke: none; /* Remove the stroke to simplify the icon */
+    stroke-width: 0;
+    height: 1em; /* Adjust the height of the icon */
+}
+
+/* Style for the phone number */
+.mc-sl__phone {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* Style for the phone icon */
+.mc-sl__phone path {
+    fill: #333;
+    stroke: none; /* Remove the stroke to simplify the icon */
+    stroke-width: 0;
+    height: 1em; /* Adjust the height of the icon */
+}
+
+/* Style for the opening hours */
+.mc-sl__opening {
+    margin-top: 5px;
+    font-style: italic;
+    color: white;
+    text-align: right;
+    margin-right: 10px
+}
+
+.button {
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    background-color: rgba(254, 154, 83, 0.2);
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: rgba(254, 143, 83, 0.15);
+    box-shadow: rgba(254, 143, 83, 0.15) 0 2px 4px, rgba(217, 103, 43, 0.15) 0 7px 13px -3px, rgba(254, 143, 83, 0.15) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 56px;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 15px;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: rgba(217, 103, 43, 0.15) 0 0 0 1.5px inset, rgba(254, 143, 83, 0.15) 0 2px 4px, rgba(254, 143, 83, 0.15) 0 7px 13px -3px, rgba(217, 103, 43, 0.15) 0 -3px 0 inset;
+}
+
+.button:hover {
+    box-shadow: rgba(217, 103, 43, 0.15) 0 4px 8px, rgba(254, 143, 83, 0.15) 0 7px 13px -3px, rgba(217, 103, 43, 0.15) 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    box-shadow: rgb(254, 174, 83) 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+
+
