@@ -117,25 +117,35 @@
                             <h1 class="display-5 mb-4">Thông tin cá nhân</h1>
                         </div>
                         <p class="mb-4 pb-2">Xin mời bạn để lại thông tin cá nhân. Chúng tôi sẽ liên lạc để hỗ trợ bạn trong thời gian sớm nhất . Cảm ơn bạn! </p>
-                        <form>
+                        <form id="messageForm" method="post" action="request-info">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Tên" style="height: 55px;">
+                                    <label>
+                                        <input type="text" name="name" class="form-control border-0" placeholder="Tên" style="height: 55px;">
+                                    </label>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Email" style="height: 55px;">
+                                    <label>
+                                        <input type="email" name="email" class="form-control border-0" placeholder="Email" style="height: 55px;">
+                                    </label>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="SĐT" style="height: 55px;">
+                                    <label>
+                                        <input type="text" name="phone" class="form-control border-0" placeholder="SĐT" style="height: 55px;">
+                                    </label>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Địa chỉ" style="height: 55px;">
+                                    <label>
+                                        <input type="text" name="address" class="form-control border-0" placeholder="Địa chỉ" style="height: 55px;">
+                                    </label>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Yêu cầu"></textarea>
+                                    <label>
+                                        <textarea class="form-control border-0" name="message" placeholder="Yêu cầu"></textarea>
+                                    </label>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Gửi</button>
+                                    <button id="submitButton" class="btn btn-primary w-100 py-3" type="submit">Gửi</button>
                                 </div>
                             </div>
                         </form>
@@ -144,6 +154,12 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('messageForm').addEventListener('submit', function() {
+            // Disable the submit button on form submit
+            document.getElementById('submitButton').disabled = true;
+        });
+    </script>
     <!-- Quote End -->
         
 

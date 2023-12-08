@@ -95,11 +95,6 @@
         <div class="container py-5">
             <h1 class="display-3 text-white mb-3 animated slideInDown">Về chúng tôi</h1>
             <nav aria-label="breadcrumb animated slideInDown">
-<!--                <ol class="breadcrumb">-->
-<!--                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>-->
-<!--                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>-->
-<!--                    <li class="breadcrumb-item text-white active" aria-current="page">About</li>-->
-<!--                </ol>-->
             </nav>
         </div>
     </div>
@@ -118,7 +113,6 @@
                                 <div class="des" ><p><span style="font-size:18px;">CÂU CHUYỆN NÀY LÀ CỦA CHÚNG MÌNH</span></p>
 
                                     <p><span style="font-family:Roboto,sans-serif;"><span style="font-size:16px;"><span style="line-height:115%"><span style="line-height:115%">Let's Cafe được thành lập vào năm 1999, bắt nguồn từ tình yêu dành cho đất Việt cùng với cà phê và cộng đồng nơi đây.&nbsp;</span></span></span></span><span style="font-family:Roboto,sans-serif;"><span style="font-size:16px;">Ngay từ những ngày đầu tiên, mục tiêu của chúng mình là có thể phục vụ và góp phần phát triển cộng đồng bằng cách siết chặt thêm sự kết nối và sự gắn bó giữa người với người.</span></span></p></div>
-                                <div class="link"><a href=""><span>Xem chi tiết</span></a></div>
                             </div>
                         </div>
                     </div>
@@ -134,7 +128,6 @@
 
                                     <p><span style="font-size:16px;"><span style="font-family:Roboto,sans-serif;"><span style="line-height:115%"><span style="line-height:115%"><span style="color:#4f2c1c">Let's Café được nhiều người nhớ đến với sự chú trọng vào việc tạo ra những ly cà phê chuẩn Gu và nổi bật với dòng sản phẩm Gu Đậm, hấp dẫn để chinh phục mọi khách hàng, kể cả những người khó tính nhất. Bí quyết của Let's Café bắt đầu từ việc sử dụng 100% hạt robusta chất lượng cao, một loại hạt cà phê mạnh mẽ và có hương vị đặc trưng.
 &nbsp;</span></span></span><span style="color:#4f2c1c">Đừng giữ trong lòng, hãy chia sẻ với chúng mình điều bạn mong muốn để cùng nhau giúp Let's Cafe trở nên tuyệt vời hơn. </span></span></span></p></div>
-                                <div class="link w"><a href=""><span>Xem chi tiết</span></a></div>
                             </div>
                         </div>
                     </div>
@@ -149,7 +142,6 @@
                                 <div class="des w" ><p>CƠ HỘI NÀY LÀ CỦA CHÚNG MÌNH</p>
 
                                     <p><span style="font-family:Roboto,sans-serif;"><span style="font-size:16px;"><span style="line-height:115%"><span style="line-height:115%"><span style="color:white">Là điểm hội tụ của cộng đồng, Let's Cafe luôn tìm kiếm những thành viên mới với mong muốn không ngừng hoàn thiện một không gian dành cho tất cả mọi người.&nbsp;</span></span></span></span></span><span style="font-family:Roboto,sans-serif;"><span style="font-size:16px;"><span style="color:white">Chúng mình luôn chào đón bạn trở thành một phần của Let's Cafe để cùng nhau siết chặt thêm những kết nối và sự gắn bó giữa người với người.</span></span></span></p></div>
-                                <div class="link w " ><a href=""><span style="color: white">Xem chi tiết</span></a></div>
                             </div>
                         </div>
                     </div>

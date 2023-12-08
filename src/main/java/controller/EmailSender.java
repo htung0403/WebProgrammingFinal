@@ -13,30 +13,38 @@ public class EmailSender {
 
     public static void sendForgetPasswordEmail(String to, String newPassword) {
         String subject = "Luxury Spa - Password Reset";
-        String body = "Dear "+ to +",\n\n"
-                + "We hope this message finds you well.\n\n"
-                + "As part of our commitment to security and privacy, we have processed your request to reset your password. Below, you will find your new login credentials:\n\n"
-                + "New Password: " + newPassword + "\n\n"
-                + "For your security, please log in with your new password at your earliest convenience and consider changing it to a personalized password of your choice.\n\n"
-                + "If you did not initiate this password reset or have any concerns, please contact our support team immediately.\n\n"
-                + "Thank you for choosing Luxury Spa.\n\n"
-                + "Best regards,\n"
+        String body = "Dear "+ to +",<br><br>"
+                + "We hope this message finds you well.<br><br>"
+                + "As part of our commitment to security and privacy, we have processed your request to reset your password. Below, you will find your new login credentials:<br><br>"
+                + "New Password: " + newPassword + "<br><br>"
+                + "For your security, please log in with your new password at your earliest convenience and consider changing it to a personalized password of your choice.<br><br>"
+                + "If you did not initiate this password reset or have any concerns, please contact our support team immediately.<br><br>"
+                + "Thank you for choosing Luxury Spa.<br><br>"
+                + "Best regards,<br>"
                 + "Luxury Spa Team";
         sendEmail(to, subject, body);
-
     }
 
+    public static void sendConfirmEmail(String to, String name) {
+        String subject = "Let's Cafe";
+        String body = " " + name + "<br><br>"
+                + "Chúng tôi đã nhận được thông tin của bạn<br><br>"
+                + "Let's Cafe sẽ liên hệ lại bạn trong thời gian gần nhất<br>"
+                + "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi<br><br>"
+                + "Let's Cafe";
+        sendEmail(to, subject, body);
+    }
     public static void sendRegistrationConfirmationEmail(String to, String username) {
         String subject = "Registration Confirmation";
-        String body = "Dear "+ username +",\n\n"
-                + "Thank you for registering with our service. We are delighted to welcome you to our community!\n\n"
-                + "You are now part of Luxury Spa Team. Here are a few things you can do:\n"
-                + "- Explore our features and services\n"
-                + "- Connect with other users\n"
-                + "- Customize your profile settings\n\n"
-                + "If you have any questions or need assistance, feel free to reach out to our support team.\n\n"
-                + "Once again, welcome aboard!\n\n"
-                + "Best regards,\n"
+        String body = "Dear "+ username +",<br><br>"
+                + "Thank you for registering with our service. We are delighted to welcome you to our community!<br><br>"
+                + "You are now part of Luxury Spa Team. Here are a few things you can do:<br>"
+                + "- Explore our features and services<br>"
+                + "- Connect with other users<br>"
+                + "- Customize your profile settings<br><br>"
+                + "If you have any questions or need assistance, feel free to reach out to our support team.<br><br>"
+                + "Once again, welcome aboard!<br><br>"
+                + "Best regards,<br>"
                 + "Luxury Spa Team";
 
         sendEmail(to, subject, body);
@@ -60,6 +68,7 @@ public class EmailSender {
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
             message.setSubject(subject);
             message.setText(body);
+            message.setContent(body, "text/html; charset=utf-8");
 
             Transport.send(message);
 

@@ -7,6 +7,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,6 +40,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body background="${pageContext.request.contextPath}/Lets/quan.jpg">
@@ -128,7 +130,7 @@
                                 <td class="text-right">${product.product.price}</td>
                                 <td class="text-right">${product.quantity * product.product.price}</td>
                                 <td>
-                                    <a id="delete_product_${product.product.id}" class="btn btn-danger">
+                                    <a id="delete_product" class="btn btn-danger" href="cart?productId=${product.product.id}&amp;quantity=0">
                                         <i class="fa fa-trash" aria-hidden="true"></i> Xóa
                                     </a>
                                 </td>
@@ -137,37 +139,17 @@
                         </tbody>
                     </table>
 
-                <%--                    <table class="table table-bordered">--%>
-<%--                        <thead>--%>
-<%--                        <tr>--%>
-<%--                            <th>STT</th>--%>
-<%--                            <th>Ảnh đại diện</th>--%>
-<%--                            <th>Tên sản phẩm</th>--%>
-<%--                            <th>Đơn giá</th>--%>
-<%--                            <th>Mô tả</th>--%>
-<%--                        </tr>--%>
-<%--                        </thead>--%>
-<%--                        <tbody id="datarow">--%>
-<%--                            <c:forEach var="product" items="${products}">--%>
-<%--                                <tr>--%>
-<%--                                    <td>${product.index + 1}</td>--%>
-<%--                                    <td>--%>
-<%--                                        <img src="${pageContext.request.contextPath}/${product.image}" alt="${product.productName}" class="hinhdaidien" style="height:100px;width: 100px">--%>
-<%--                                    </td>--%>
-<%--                                    <td>${product.productName}</td>--%>
-<%--                                    <td class="text-right">${product.price}</td>--%>
-<%--                                    <td>${product.description}</td>--%>
-<%--                                </tr>--%>
-<%--                            </c:forEach>--%>
-<%--                        </tbody>--%>
-<%--                    </table>--%>
-
                     <a href="index.jsp" class="btn btn-warning btn-md"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Quay
                         về trang chủ</a>
                     <a href="sanphambanle.jsp" class="btn btn-warning btn-md">Mua tiếp tục
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp;</a><br>
-                    <a href="checkout.html" class="btn btn-primary btn-md"><i
+                    <% if (user != null) { %>
+                    <a href="checkout.jsp" class="btn btn-primary btn-md"><i
                             class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Thanh toán</a>
+                    <% } else { %>
+                    <a href="login.jsp?from=checkout" class="btn btn-primary btn-md"><i
+                            class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Thanh toán</a>
+                    <% } %>
                 </div>
             </div>
         </div>

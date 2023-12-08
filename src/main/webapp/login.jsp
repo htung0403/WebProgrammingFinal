@@ -1,6 +1,7 @@
 <%@ page import="entity.Customer" %>
 <%@ page import="jakarta.servlet.http.HttpSession" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="jakarta.servlet.http.HttpServletRequest" %>
 
 
 <!DOCTYPE html>
@@ -34,9 +35,25 @@
   <link href="css/login.css " rel="stylesheet">
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.1/toastr.min.css" rel="stylesheet"/>
+
 </head>
 <body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.1/toastr.min.js"></script>
 
+<%
+  String from = request.getParameter("from");
+  if ("checkout".equals(from)) {
+%>
+<script>
+  window.onload = function() {
+    toastr.warning('Bạn phải đăng nhập để thanh toán.');
+  }
+</script>
+<%
+  }
+%>
 <form class="form_container mx-auto" method="post" action="login">
   <div class="">
     <img src="Lets/logo1-2.png">
@@ -71,5 +88,26 @@
 
   <p class="note">Forgot password</p>
 </form>
+
+
+<script>
+  toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "newestOnTop": true,
+    "progressBar": true,
+    "positionClass": "toast-bottom-right",
+    "preventDuplicates": true,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": "3000",
+    "extendedTimeOut": "500",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+  }
+</script>
 </body>
 </html>
