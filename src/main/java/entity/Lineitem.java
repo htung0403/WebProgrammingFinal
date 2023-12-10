@@ -3,5 +3,5 @@ package entity;
 import jakarta.persistence.Entity;
 
 @Entity
-public class Order {
+public class Lineitem {
 }
